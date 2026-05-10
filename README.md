@@ -1,16 +1,42 @@
-# React + Vite
+# Career Growth Planner
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Career Growth Planner is a React + TypeScript web app that helps working professionals analyse their current role, compare their skills against market expectations, and generate a personalised learning roadmap with daily, weekly, and monthly goals.
 
-Currently, two official plugins are available:
+This project demonstrates product thinking, React component design, TypeScript modelling, form handling, rule-based recommendation logic, local data persistence, and user-focused UI design.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## MVP Features
 
-## React Compiler
+- Landing page with product positioning and career goal examples
+- Profile setup form with React Hook Form and Zod validation
+- Goal templates for senior software engineer, AI engineer, workplace English, data engineer, and DevOps engineer
+- Market skill comparison and rule-based gap analysis
+- Daily, weekly, and monthly learning plan generation
+- Resource recommendations based on the selected goal
+- Progress tracking and career evidence saved to localStorage
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- React
+- TypeScript
+- Vite
+- React Router
+- Tailwind CSS
+- React Hook Form
+- Zod
+- Vitest and React Testing Library
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Run Locally
+
+```bash
+npm install
+npm run dev
+```
+
+## Quality Checks
+
+```bash
+npm run typecheck
+npm run lint
+npm test
+npm run build
+```
