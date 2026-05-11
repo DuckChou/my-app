@@ -27,3 +27,44 @@ select,
 textarea {
   font: inherit;
 }
+
+.drop-hint {
+  animation: drag-hint 1.8s ease-in-out infinite;
+}
+
+.drop-success {
+  animation: drop-success 0.7s ease-out;
+}
+
+@keyframes drag-hint {
+  0%,
+  100% {
+    border-color: #cbd5e1;
+    box-shadow: 0 0 0 0 rgb(15 23 42 / 0);
+  }
+
+  50% {
+    border-color: #64748b;
+    box-shadow: 0 0 0 4px rgb(15 23 42 / 0.08);
+  }
+}
+
+@keyframes drop-success {
+  0% {
+    border-color: #059669;
+    background: #ecfdf5;
+    transform: scale(1);
+  }
+
+  40% {
+    border-color: #059669;
+    background: #d1fae5;
+    transform: scale(1.01);
+  }
+
+  100% {
+    border-color: #cbd5e1;
+    background: #f8fafc;
+    transform: scale(1);
+  }
+}
